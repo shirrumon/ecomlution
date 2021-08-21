@@ -1,0 +1,114 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+
+.wsatc-stick-cart-wrapper {
+  background: #fff;
+}
+
+.wsatc-stick-cart-wrapper {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  padding: 15px 0;
+  box-shadow: -1px 0 5px rgba(0,0,0,.2);
+  background: #fdfdfd;
+  color: #000;
+  z-index: 1;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  opacity: 0;
+  visibility: hidden;
+  /* transform: translateY(100%) */
+}
+.wsatc-stick-cart-wrapper.bottom{
+  bottom: 0;
+  left: 0;
+}
+.wsatc-stick-cart-wrapper.top{
+  top: 71px;
+  left: 0;
+}
+.admin-bar .wsatc-stick-cart-wrapper.top{
+  top:103px ;
+ }
+.wsatc-stick-cart-wrapper.simple-aniamate{
+  transform: translateY(100%);
+}
+.wsatc-stick-cart-wrapper.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 100;
+  /* transform: translateY(0); */
+}
+.wsatc-stick-cart-wrapper.simple-aniamate.active{
+  transform: translateY(0);
+}
+
+.wsatc-stick-cart-wrapper .container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wsatc-stick-cart-wrapper .wrap-product-content {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+.wsatc-stick-cart-wrapper .product-title {
+  margin: 0 30px 0 0;
+  font-weight: 600;
+}
+.wsatc-stick-cart-wrapper .woocommerce-Price-amount{
+  padding-right: 7px;
+}
+/*===================================
+Resposive query
+=====================================*/
+
+
+
+/* Desktop*/
+@media screen and (min-width: 1024px) {
+
+  .wsatc-stick-cart-wrapper.disable-desktop{
+    display: none;
+  }
+  
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  
+  .wsatc-stick-cart-wrapper.disable-tablet{
+    display: none;
+  }
+  
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 767px){
+  .admin-bar .wsatc-stick-cart-wrapper.top{
+    top:115px !important;
+  }
+}
+
+@media  screen and (max-width: 600px) {
+
+  .wsatc-stick-cart-wrapper.disable-mobile{
+    display: none;
+  }
+  .wsatc-stick-cart-wrapper {
+    padding: 8px 0;
+  }
+  
+}

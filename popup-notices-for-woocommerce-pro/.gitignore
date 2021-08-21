@@ -1,0 +1,17 @@
+.idea
+.idea/*
+
+**/.sass-cache
+**/.sass-cache/*
+gulp-tasks/node_modules
+gulp-tasks/node_modules/*
+gulp-tasks/package-lock.json
+
+vendor/tareq1988/wordpress-settings-api-class/example
+vendor/tareq1988/wordpress-settings-api-class/example/*
+
+vendor/thanks-to-it/popup-notices-for-woocommerce/wporg_assets
+vendor/thanks-to-it/popup-notices-for-woocommerce/wporg_assets/*
+
+**/*.log
+**/*.psd

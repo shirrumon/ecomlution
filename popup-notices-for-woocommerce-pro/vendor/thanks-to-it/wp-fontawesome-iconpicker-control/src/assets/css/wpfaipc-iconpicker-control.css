@@ -1,0 +1,12 @@
+.wpfaipc-wrapper{
+    position:relative;
+}
+.wpfaipc-icon{
+    position: absolute;
+    right: 8px;
+    top: 4px;
+    z-index: 2;
+}
+.iconpicker-popover.popover{
+    position:static;
+}

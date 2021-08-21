@@ -1,0 +1,2 @@
+<?php
+/** Only Premium */
